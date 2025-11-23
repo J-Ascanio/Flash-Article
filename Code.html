@@ -1,11 +1,30 @@
 <!DOCTYPE html>
-  <html lang="en">
-    <head>
-      <style>
-      
-      </style>
-    </head>
-    <body>
-      <h1>Flash Article</h1>
-    </body>
-  </html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <style>
+  * {
+    background-color: whitesmoke;
+  }
+    </style>
+    <!-- PyScript Link -->
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.11.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.11.1/core.js"></script>
+  </head>
+  <body>
+    <h1>Flash Article</h1>
+    <!-- Python (Pyodide) -->
+    <script type="py">
+      from pyscript import display
+      import sys
+      display(sys.version)
+    </script>
+    <!-- MicroPython -->
+    <script type="mpy">
+      from pyscript import display
+      import sys
+      display(sys.version)
+    </script>
+  </body>
+</html>
